@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#23100A">
+
+    <EditText
+        android:id="@+id/editTextFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa la función (ej. sin(x), cos(x))"
+        android:textColor="#FFFFFF"
+        android:background="#1A1D31"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnDrawGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dibujar Gráfico"
+        android:layout_gravity="center"
+        android:background="#0D3A5F"
+        android:textColor="#FFFFFF"/>
+
+    <com.example.calculadora2.GraphView
+        android:id="@+id/graph_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
